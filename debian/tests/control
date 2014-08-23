@@ -1,2 +1,2 @@
 tests: build
-Depends: libzhuyin4-dev, build-essential, pkg-config
+Depends: libzhuyin-dev, build-essential, pkg-config
