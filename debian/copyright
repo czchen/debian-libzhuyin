@@ -3,14 +3,12 @@ Upstream-Name: libzhuyin
 Source: https://github.com/libzhuyin/libzhuyin
 
 Files: *
-Copyright:
- James Su 2002,2003,2006 <suzhe@tsinghua.edu.cn>
- Peng Wu 2006-2007 2010-2011 <alexepico@gmail.com>
+Copyright: 2002-2006 James Su <suzhe@tsinghua.edu.cn>
+           2006-2013 Peng Wu <alexepico@gmail.com>
 License: GPL-2+
 
 Files: debian/*
-Copyright:
- 2014 IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Copyright: 2014 ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
 License: GPL-2+
 
 License: GPL-2+
