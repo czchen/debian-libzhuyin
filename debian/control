@@ -59,7 +59,7 @@ Description: Development files for zhuyin input method library
  be integrated with input method framework likes ibus, fcitx, etc. to
  provide a zhuyin based input method for Traditional Chinese user.
  .
- This package contains development files for libzhuyin
+ This package contains development files for libzhuyin.
 
 Package: libzhuyin-dbg
 Section: debug
@@ -75,4 +75,19 @@ Description: Debug symbols for zhuyin input method library
  be integrated with input method framework likes ibus, fcitx, etc. to
  provide a zhuyin based input method for Traditional Chinese user.
  .
- This package contains debug symbols for libzhuyin
+ This package contains debug symbols for libzhuyin.
+
+Package: libzhuyin-utils
+Provides: libzhuyin
+Architecture: any
+Multi-Arch: foreign
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Tools for zhuyin input method library
+ The libzhuyin project aims to provide the algorithms core for
+ intelligent sentence-based Chinese zhuyin input methods. libzhuyin can
+ be integrated with input method framework likes ibus, fcitx, etc. to
+ provide a zhuyin based input method for Traditional Chinese user.
+ .
+ This package contains tools used to develop libzhuyin.
