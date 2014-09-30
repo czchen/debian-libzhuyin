@@ -1,5 +1,5 @@
-libzhuyin (0.9.99.20140718-1) unstable; urgency=low
+libzhuyin (0.9.99.20140929-1) unstable; urgency=low
 
   * Initial release (Closes: #745498)
 
- -- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>  Sat, 23 Aug 2014 10:01:53 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>  Tue, 30 Sep 2014 21:24:37 +0800
