@@ -13,10 +13,10 @@ gen_unigram \- increase the unigram frequency for all phrases
 
 .SH USAGE
 .HP
-gen_binary_files --table-dir <DIRNAME>
+gen_binary_files \-\-table\-dir <DIRNAME>
 .RS
 .HP
-.B --table-dir
+.B \-\-table\-dir
 Read textual format files from the <DIRNAME> directory.
 .RE
 .HP
@@ -25,12 +25,10 @@ import_interpolation \< <MODELFILE>
 gen_unigram
 
 .SH EXAMPLE
-Download the model.text.tar.gz, and extracts all files into a folder, then run the commands below to generate the binary model data.
+Download the model.text.tar.gz, and extracts all files into the data sub-directory, then run the commands below to generate the binary model data.
 
 .RS
-rm gb_char.bin gbk_char.bin phrase_index.bin pinyin_index.bin bigram.db
-
-gen_binary_files --table-dir ../data
+gen_binary_files \-\-table\-dir ../data
 
 import_interpolation < ../data/interpolation.text
 

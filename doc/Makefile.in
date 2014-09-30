@@ -267,11 +267,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-man_MANS = libzhuyin.1 \
-			  gen_binary_files.1 \
-			  import_interpolation.1 \
-			  gen_unigram.1
-
+man_MANS = libzhuyin.1
 EXTRA_DIST = $(man_MANS)
 all: all-am
 
