@@ -1,4 +1,4 @@
-libzhuyin.so.5 libzhuyin5 #MINVER#
+libzhuyin.so.6 libzhuyin6 #MINVER#
  LIBZHUYIN@LIBZHUYIN 0.9.99.20140929
  zhuyin_alloc_instance@LIBZHUYIN 0.9.99.20140929
  zhuyin_begin_add_phrases@LIBZHUYIN 0.9.99.20140929

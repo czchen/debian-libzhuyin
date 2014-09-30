@@ -15,7 +15,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-ime/libzhuyin.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/libzhuyin.git;a=summary
 XS-Testsuite: autopkgtest
 
-Package: libzhuyin5
+Package: libzhuyin6
 Provides: libzhuyin
 Architecture: any
 Multi-Arch: same
@@ -51,7 +51,7 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- libzhuyin5 (= ${binary:Version}),
+ libzhuyin6 (= ${binary:Version}),
  libglib2.0-dev
 Description: Development files for zhuyin input method library
  The libzhuyin project aims to provide the algorithms core for
@@ -68,7 +68,7 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- libzhuyin5 (= ${binary:Version})
+ libzhuyin6 (= ${binary:Version})
 Description: Debug symbols for zhuyin input method library
  The libzhuyin project aims to provide the algorithms core for
  intelligent sentence-based Chinese zhuyin input methods. libzhuyin can
