@@ -5,7 +5,7 @@ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
 Uploaders:
  ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
 Build-Depends:
- debhelper (>= 9.0.0),
+ debhelper (>= 9),
  dh-autoreconf,
  libglib2.0-dev (>= 2.4.0),
  libdb-dev (>= 4)
