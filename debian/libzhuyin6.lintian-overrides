@@ -1,0 +1,2 @@
+# False positive.
+libzhuyin6 [amd64] binary: spelling-error-in-binary usr/lib/x86_64-linux-gnu/libzhuyin.so.6.0.0 tEH the
