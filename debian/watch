@@ -1,2 +1,3 @@
 version=3
 http://sf.net/libzhuyin/libzhuyin-(\d\S*)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+https://github.com/libzhuyin/libzhuyin/releases .*/archive/v?(\d\S+)\.tar\.(?:bz2|gz|xz)
