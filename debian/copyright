@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libzhuyin
-Source: https://github.com/libzhuyin/libzhuyin
+Source: http://sourceforge.net/projects/libzhuyin/files/libzhuyin/
 
 Files: *
 Copyright: 2002-2006 James Su <suzhe@tsinghua.edu.cn>
