@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
+export V=1
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 TIME_VER=$(shell dpkg-parsechangelog --show-field Version | cut -d. -f 4 | cut -d- -f 1)
