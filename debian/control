@@ -9,7 +9,7 @@ Build-Depends:
  dh-autoreconf,
  libglib2.0-dev (>= 2.4.0),
  libdb-dev (>= 4)
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://github.com/libzhuyin/libzhuyin
 Vcs-Git: git://anonscm.debian.org/pkg-ime/libzhuyin.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/libzhuyin.git;a=summary
