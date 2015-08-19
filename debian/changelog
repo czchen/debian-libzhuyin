@@ -1,3 +1,9 @@
+libzhuyin (1.0.91-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@gmail.com>  Wed, 19 Aug 2015 22:47:57 +0800
+
 libzhuyin (1.0.2-1) unstable; urgency=medium
 
   * New upstream release
