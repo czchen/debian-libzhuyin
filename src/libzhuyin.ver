@@ -22,9 +22,11 @@ LIBZHUYIN {
         zhuyin_parse_more_full_pinyins;
         zhuyin_parse_chewing;
         zhuyin_parse_more_chewings;
+        zhuyin_valid_zhuyin_keys;
         zhuyin_get_parsed_input_length;
         zhuyin_in_chewing_keyboard;
-        zhuyin_guess_candidates;
+        zhuyin_guess_candidates_after_cursor;
+        zhuyin_guess_candidates_before_cursor;
         zhuyin_choose_candidate;
         zhuyin_clear_constraint;
         zhuyin_lookup_tokens;
@@ -47,7 +49,7 @@ LIBZHUYIN {
         zhuyin_get_zhuyin_key_rest_positions;
         zhuyin_get_zhuyin_key_rest_length;
         zhuyin_get_zhuyin_key_rest_offset;
-        zhuyin_get_raw_full_pinyin;
+        zhuyin_get_raw_user_input;
         zhuyin_get_n_phrase;
         zhuyin_get_phrase_token;
 

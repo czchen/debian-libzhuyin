@@ -768,14 +768,14 @@ bool ChewingDiscreteParser2::parse_one_key(pinyin_option_t options,
         if (search_chewing_tones(m_tone_table, str[index], &tone)) {
             index ++;
         }
-
-        /* check the force tone option. */
-        if (options & FORCE_TONE && CHEWING_ZERO_TONE == tone) {
-            return false;
-        }
     }
 
 probe:
+    /* check the force tone option. */
+    if (options & FORCE_TONE && CHEWING_ZERO_TONE == tone) {
+        return false;
+    }
+
     gchar * chewing = g_strconcat(initial, middle, final, NULL);
 
     /* search the chewing in the chewing index table. */
@@ -915,7 +915,7 @@ bool ChewingDiscreteParser2::in_chewing_scheme(pinyin_option_t options,
     }
 
 end:
-    assert(array->len <= 2);
+    assert(array->len <= 3);
 
     if (array->len) {
         g_ptr_array_add(array, NULL);
@@ -1307,6 +1307,8 @@ bool ChewingDirectParser2::parse_one_key(pinyin_option_t options,
         /* save back tone if available. */
         key.m_tone = tone;
         g_free(chewing);
+
+        assert(tone != CHEWING_ZERO_TONE);
         return true;
     }
 

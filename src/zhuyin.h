@@ -41,7 +41,8 @@ typedef struct _import_iterator_t import_iterator_t;
 
 typedef enum _lookup_candidate_type_t{
     BEST_MATCH_CANDIDATE = 1,
-    NORMAL_CANDIDATE,
+    NORMAL_CANDIDATE_AFTER_CURSOR,
+    NORMAL_CANDIDATE_BEFORE_CURSOR,
     ZOMBIE_CANDIDATE
 } lookup_candidate_type_t;
 
@@ -309,6 +310,17 @@ size_t zhuyin_parse_more_chewings(zhuyin_instance_t * instance,
                                   const char * chewings);
 
 /**
+ * zhuyin_valid_zhuyin_keys:
+ * @instance: the zhuyin instance.
+ * @returns: whether all zhuyin keys are valid.
+ *
+ * Valid parsed zhuyin keys, if all valid, return true;
+ * if not, modify raw user input and return false.
+ *
+ */
+bool zhuyin_valid_zhuyin_keys(zhuyin_instance_t * instance);
+
+/**
  * zhuyin_get_parsed_input_length:
  * @instance: the zhuyin instance.
  * @returns: the parsed_length of the input.
@@ -332,7 +344,7 @@ size_t zhuyin_get_parsed_input_length(zhuyin_instance_t * instance);
 bool zhuyin_in_chewing_keyboard(zhuyin_instance_t * instance,
                                 const char key, gchar *** symbols);
 /**
- * zhuyin_guess_candidates:
+ * zhuyin_guess_candidates_after_cursor:
  * @instance: the zhuyin instance.
  * @offset: the offset in the pinyin keys.
  * @returns: whether a list of tokens are gotten.
@@ -340,8 +352,20 @@ bool zhuyin_in_chewing_keyboard(zhuyin_instance_t * instance,
  * Guess the candidates at the offset.
  *
  */
-bool zhuyin_guess_candidates(zhuyin_instance_t * instance,
-                             size_t offset);
+bool zhuyin_guess_candidates_after_cursor(zhuyin_instance_t * instance,
+                                          size_t offset);
+
+/**
+ * zhuyin_guess_candidates_before_cursor:
+ * @instance: the zhuyin instance.
+ * @offset: the offset in the pinyin keys.
+ * @returns: whether a list of tokens are gotten.
+ *
+ * Guess the candidates at the offset.
+ *
+ */
+bool zhuyin_guess_candidates_before_cursor(zhuyin_instance_t * instance,
+                                           size_t offset);
 
 /**
  * zhuyin_choose_candidate:
@@ -641,7 +665,7 @@ bool zhuyin_get_zhuyin_key_rest_offset(zhuyin_instance_t * instance,
                                        guint16 * offset);
 
 /**
- * zhuyin_get_raw_full_pinyin:
+ * zhuyin_get_raw_user_input:
  * @instance: the zhuyin instance.
  * @utf8_str: the modified raw full pinyin after choose candidate.
  * @returns: whether the get operation is successful.
@@ -649,8 +673,8 @@ bool zhuyin_get_zhuyin_key_rest_offset(zhuyin_instance_t * instance,
  * Get the modified raw full pinyin after choose candidate.
  *
  */
-bool zhuyin_get_raw_full_pinyin(zhuyin_instance_t * instance,
-                                const gchar ** utf8_str);
+bool zhuyin_get_raw_user_input(zhuyin_instance_t * instance,
+                               const gchar ** utf8_str);
 
 /**
  * zhuyin_get_n_phrase:
